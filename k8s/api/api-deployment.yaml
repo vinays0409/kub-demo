@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-deployment
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: api
+  template:
+    metadata:
+      name: api-pod
+      labels:
+        app: api
+    spec:
+      containers:
+        - name: api-container
+          image: vinay0409/nagp-api
+          envFrom:
+            - configMapRef:
+                name: db-config
+          env:
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: db-secret
+                  key: password

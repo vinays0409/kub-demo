@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: db-config
+data:
+  DB_URL: db-stateful-0.db-service.default.svc.cluster.local
+  DB_PORT: "5432"
+  DB_USER: nagp-db
+  DB_NAME: nagp-db
