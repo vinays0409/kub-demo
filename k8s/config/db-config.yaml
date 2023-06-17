@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: db-config
 data:
-  DB_URL: db-stateful-0.db-service.default
+  DB_URL: db-stateful-0.db-service
   DB_PORT: "5432"
   DB_USER: vinay
   DB_NAME: nagp-db

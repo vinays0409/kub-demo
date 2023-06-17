@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: api-container
-          image: vinay0409/nagp-api
+          image: vinay0409/nagp-api:1.0.0
           envFrom:
             - configMapRef:
                 name: db-config

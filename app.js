@@ -25,8 +25,8 @@ app.get("/items", (req, res) => {
   });
 });
 
-//Convenience API to set up and preload the database with data
-app.get("/setupdb", (req, res) => {
+//Convenience API to populate the database with table and data for the assignment
+app.get("/populatedb", (req, res) => {
   const createTableQuery = `
   CREATE TABLE items (
     id SERIAL PRIMARY KEY,
@@ -53,9 +53,7 @@ app.get("/setupdb", (req, res) => {
     if (err) {
       res.status(500).json({ error: err.toString() });
     } else {
-      res
-        .status(200)
-        .json({ message: "Table created and data inserted successfully!" });
+      res.status(200).json({ message: "Database populated successfully!" });
     }
   });
 });
