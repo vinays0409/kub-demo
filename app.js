@@ -13,6 +13,7 @@ const app = express();
 
 app.use(express.json());
 
+// API to fetch items from database
 app.get("/items", (req, res) => {
   pool.query("SELECT * FROM items", (error, results) => {
     if (error) {
@@ -25,7 +26,7 @@ app.get("/items", (req, res) => {
   });
 });
 
-//Convenience API to populate the database with table and data for the assignment
+//Convenience API to populate the database with initial data for the assignment
 app.get("/populatedb", (req, res) => {
   const createTableQuery = `
   CREATE TABLE items (
