@@ -1,4 +1,4 @@
-The databse and service tier deployment is done using Google kubernetes Engine (GKE) in Google cloud platform
+The database and service tier deployment is done using Google kubernetes Engine (GKE) in Google cloud platform
 
 Link For Code Repository - https://github.com/vinays0409/nagp-kubernetes
 
