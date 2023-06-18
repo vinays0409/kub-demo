@@ -10,8 +10,10 @@ How to populate the database with initial data:
 There are two following ways in which database can be populated with initial data
 
 1. Using a convenience API endpoint created for this assignment in Service tier which can be run onced to populate the Database.
-   This requires both the database and service tier to be deployed. This also used the external endpoint for Service tier Loadbalancer service.
+   This requires both the database and service tier to be deployed. This uses the external endpoint for Service tier Loadbalancer service.
    http://34.122.126.89/populatedb
+
+   or
 
 2. After the database deployment is done run the following commands from the cloud shell inside the cluster:
 
