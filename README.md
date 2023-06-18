@@ -6,7 +6,7 @@ Service tier - Docker Hub Image URL - https://hub.docker.com/r/vinay0409/nagp-ap
 
 Database tier - Docker Hub Image URL - https://hub.docker.com/_/postgres
 
-URL for Service API tier to view the records from backend tier - http://34.172.250.250//items
+URL for Service API tier to view the records from backend tier - http://34.172.250.250/items
 
 Note: The above mentioned url uses the external endpoint for Loadbalancer service. If it does not work its because the cluster is stopped on GCP. Kindly contact me in case required.
 
