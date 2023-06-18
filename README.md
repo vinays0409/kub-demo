@@ -6,7 +6,7 @@ Service tier - Docker Hub Image URL - https://hub.docker.com/r/vinay0409/nagp-ap
 
 Database tier - Docker Hub Image URL - https://hub.docker.com/_/postgres
 
-URL for Service API tier to view the records from backend tier - http://{externalip}/items
+URL for Service API tier to view the records from backend tier - http://34.172.250.250//items
 
 Note: The above mentioned url uses the external endpoint for Loadbalancer service. If it does not work its because the cluster is stopped on GCP. Kindly contact me in case required.
 
@@ -52,5 +52,5 @@ There are two following ways in which database can be populated with initial dat
    
 2. Using a convenience API endpoint created for this assignment in Service tier which can be run once to populate the Database.
    This requires both the database and service tier to be deployed. This uses the external endpoint for Service tier Loadbalancer service.
-   http://{externalip}/populatedb
+   http://34.172.250.250/populatedb
    
