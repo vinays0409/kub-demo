@@ -1,10 +1,12 @@
 Link For Code Repository - https://github.com/vinays0409/nagp-kubernetes
 
 Service tier - Docker Hub Image URL - https://hub.docker.com/r/vinay0409/nagp-api
+
 Database tier - Docker Hub Image URL - https://hub.docker.com/_/postgres
 
 URL for Service API tier to view the records from backend tier - http://34.122.126.89/items
-Note: The above mentioned url uses the external endpoint for Service tier Loadbalancer service. If it does not work its because the cluster is stopped on GCP. Kindly contact me in case required.
+
+Note: The above mentioned Service API tier url uses the external endpoint for Loadbalancer service. If it does not work its because the cluster is stopped on GCP. Kindly contact me in case required.
 
 How to populate the database with initial data:
 There are two following ways in which database can be populated with initial data
